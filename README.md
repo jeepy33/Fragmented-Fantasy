@@ -6,9 +6,10 @@ Project Goals
 - Logo for podcasts/website 
 
 Team 
-- Alexa: Edit podcast/add sound effects/help with writing script/website 
-- Jagr: Record podcast (as narrator)/write script/art (logo)
+- Alexa: Edit podcast/add sound effects/help with writing script
+- Jagr: Record podcast (as narrator)/write script
 - Kyle: Website/upload podcast to website 
+- Brian: Logo/ helping on website  
 
 Task List
 - Write podcast script 
