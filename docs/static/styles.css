@@ -1,6 +1,7 @@
 body{
   background-color: #fce4b7;
   font-family: 'Overpass', sans-serif;
+  font-size: 2rem;
 }
 .sidenav {
   height: 100%; /* Full-height: remove this if you want "auto" height */
@@ -65,7 +66,30 @@ body{
 .row {
   display: flex;
 }
+.column {
+  float: left;
+  visibility: hidden;
+  width: 33.33%;
+}
+.story-image {
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
+.story-title {
+  text-align: center;
+  font-size: 3rem;
+  font-family: sans-serif;
+  font-style: italic;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 #stories {
   text-decoration: underline;
   font-weight: bold;
