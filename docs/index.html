@@ -12,9 +12,24 @@
     <title>Fragmented Fantasy</title>	
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="static/styles.css">
+    <!-- For the icons for mobile-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
-
+<div class="page">
+<div class="topnav">
+  <img id="logo" src="image/FF-logo.gif" alt="Fragmented Fantasy Logo">
+  <!-- Navigation links (hidden by default) -->
+  <div id="myLinks">
+    <a id="story1title" onclick="showStory1()">The Grate Escape</a>
+    <a id="story2title" onclick="showStory2()">A Classic Story</a>
+    <a id="story3title" onclick="showStory3()">My Trip to Walmart</a>
+  </div>
+  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+  <a href="javascript:void(0);" class="icon" onclick="showMenu()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
 <body>
 	<div class="sidenav">
     <h1 class="title">Fragmented Fantasy</h1>
@@ -51,7 +66,7 @@
   </div>
 </div>
 <script src="static/scripts.js"></script>
-
+</div>
 </body>
 
 </html>
