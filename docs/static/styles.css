@@ -1,6 +1,9 @@
+
 body{
   background-color: #fce4b7;
   font-family: 'Overpass', sans-serif;
+  font-size: 2rem;
+
 }
 .sidenav {
   height: 100%; /* Full-height: remove this if you want "auto" height */
@@ -12,8 +15,13 @@ body{
   background-color: #111; /* Black */
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 20px;
+  border: black;
+  border-style: solid;
 }
 
+.topnav{
+  display: none;
+}
 #logo {
   display: block; 
   margin-left: auto;
@@ -56,16 +64,40 @@ body{
 .sidenav a:hover {
   color: #f1f1f1;
 }
-
 /* Style page content */
 .main {
   margin-left: 320px; /* Same as the width of the sidebar */
   padding: 0px 10px;
+
 }
 .row {
   display: flex;
 }
+.column {
+  float: left;
+  visibility: hidden;
+  width: 33.33%;
+}
+.story-image {
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
+.story-title {
+  text-align: center;
+  font-size: 3rem;
+  font-family: sans-serif;
+  font-style: italic;
+  word-break: keep-all;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 #stories {
   text-decoration: underline;
   font-weight: bold;
@@ -85,4 +117,73 @@ body{
   }
   .sidenav a {font-size: 18px;}
   .main{margin-left: 200px}
+}
+
+@media screen and (max-width: 800px){
+  .page{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .sidenav{
+    display: none;
+  }
+  .main{
+    margin: 0;
+    padding: 0;
+  }
+  .topnav {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    background-color: #333;
+    position: relative;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  #logo{
+    width: 40%;
+  }
+  .story-title {
+      font-size: 2rem;
+  }
+  body{
+    font-size: 1rem;
+  
+  }
 }
