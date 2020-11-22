@@ -51,6 +51,14 @@ body{
   display: block;
 }
 
+#header-story{
+  position: absolute;
+  font-weight: 100;
+  font-size: 2.4rem;
+  top: 38%;
+  left: 38%;
+}
+
 .header {
   padding-left: auto;
   padding-top: 2rem;
@@ -111,6 +119,20 @@ body{
   flex: 50%;
 }
 
+#shelf{
+  position: relative;
+  top: 0%;
+  left: 0%;
+  max-height: 25rem;
+  width: 70rem;
+}
+#plaque{
+  position: absolute;
+  top: 28%;
+  left: 32%;
+  max-height: 25rem;
+  width: 40rem;
+}
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
 @media screen and (max-height: 450) {
   .sidenav {padding-top: 15px;
@@ -126,7 +148,8 @@ body{
     margin-right: auto;
     display: block;
   }
-  .sidenav{
+
+  .sidenav, #shelf, #plaque,#header-story{
     display: none;
   }
   .main{
@@ -181,6 +204,7 @@ body{
     width: 40%;
   }
   .story-title {
+    
       font-size: 2rem;
   }
   body{
