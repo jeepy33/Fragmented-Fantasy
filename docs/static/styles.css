@@ -1,8 +1,15 @@
 
+@font-face {
+  font-family: immortal;
+  src: url(IMMORTAL.ttf);
+}
+
+
 body{
   background-color: #fce4b7;
   font-family: 'Overpass', sans-serif;
   font-size: 2rem;
+  font-family: immortal;
 
 }
 .sidenav {
@@ -38,7 +45,6 @@ body{
   word-break: keep-all;
   text-align: center;
   color: rgb(179, 162, 11);
-  text-decoration: line-through;
   font-size: 3rem;
 }
 /* The navigation menu links */
@@ -55,17 +61,17 @@ body{
   position: absolute;
   font-weight: 100;
   font-size: 2.4rem;
-  top: 38%;
-  left: 38%;
+  top: 12%;
+  left: 43%;
 }
 
 .header {
   padding-left: auto;
-  padding-top: 2rem;
+  padding-top: 0;
   text-align: center;
   background:  #be9b58;
   color: black;
-  font-size: 30px;
+  font-size: 80vh;
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -79,12 +85,14 @@ body{
 
 }
 .row {
-  display: flex;
+  display: inline;
 }
 .column {
-  float: left;
   visibility: hidden;
-  width: 33.33%;
+  width: 70%;
+  position: absolute;
+  left:13%;
+  margin-left: 12%;
 }
 .story-image {
   width: 80%;
@@ -121,15 +129,15 @@ body{
 
 #shelf{
   position: relative;
-  top: 0%;
+  top: 10%;
   left: 0%;
   max-height: 25rem;
   width: 70rem;
 }
 #plaque{
   position: absolute;
-  top: 28%;
-  left: 32%;
+  top: 5%;
+  left: 40%;
   max-height: 25rem;
   width: 40rem;
 }
