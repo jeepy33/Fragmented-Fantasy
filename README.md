@@ -1,7 +1,10 @@
 # Fragmented-Fantasy
 Website: https://jeepy33.github.io/Fragmented-Fantasy/
+
 Podcast(Anchor): https://anchor.fm/fragmented-fantasy
+
 Podcast(Spotify): https://open.spotify.com/show/3PfPZF5OfdflqzsBNHnJx7
+
 
 Project Goals
 - Website with interesting/interactive display of podcast episodes
